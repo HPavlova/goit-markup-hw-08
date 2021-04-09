@@ -62,28 +62,60 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="burger-btn">
+        <button type="button" class="burger__btn" data-menu-button>
           <svg class="img-burger" width="24" height="16">
             <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu"></div>
+      <div class="burger-menu" data-menu>
+        <button type="button" class="burger-menu__btn" data-modal-close>
+          <svg class="burger-menu__close" width="19" height="19">
+            <use href="./images/icons.svg#burger-close"></use>
+          </svg>
+        </button>
+        <ul class="burger-menu__list list">
+          <li class="burger-menu__item">
+            <a class="burger-menu__link link current" href="">Студия</a>
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="contact list">
+          <li class="contact__item">
+            <a class="contact__link link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link link" href="tel:+380961111111"
+              > +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        
+      </div>
     </header>
 
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Why Choose Us? -->
-      <section class="feature">
+      <!-- <section class="feature">
         <div class="container">
           <h2 class="no-title visually-hidden">Почему выбирают нас</h2>
           <ul class="list feature__list">
@@ -141,10 +173,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Services -->
-      <section class="service">
+      <!-- <section class="service">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list service__list">
@@ -174,270 +206,16 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team -->
-      <section class="team">
-        <div class="container">
-          <h2 class="title">Наша команда</h2>
-          <ul class="list team__list">
-            <li class="team__item">
-              <picture class="picture">
-                <source srcset="./images/Desktop/Team/ihor.webp 1x, ./images/Desktop/Team/ihor@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                <source srcset="./images/Desktop/Team/ihor.jpeg 1x, ./images/Desktop/Team/ihor@2x.jpeg 2x" media="(min-width: 1200px)">
-                <source srcset="./images/Tablet/Team/ihor.webp 1x, ./images/Tablet/Team/ihor@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                <source srcset="./images/Tablet/Team/ihor.jpeg 1x, ./images/Tablet/Team/ihor@2x.jpeg 2x"media="(min-width: 768px)">
-                <source srcset="./images/Mobile/Team/ihor.webp 1x, ./images/Mobile/Team/ihor@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
-                <source srcset="./images/Mobile/Team/ihor.jpeg 1x, ./images/Mobile/Team/ihor@2x.jpeg 2x" media="(min-width: 480px)">
-              <img
-                src="./images/Desktop/Team/ihor.jpeg"
-                alt="Игорь Демьяненко"
-              />
-              </picture>
-              <div class="team__card">
-                <h3 class="team__title">Игорь Демьяненко</h3>
-                <p lang="en" class="team__desc">Product Designer</p>
-                <div class="social">
-                  <ul class="social__list list">
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-instagram" width="20" height="20">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-twitter" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-facebook" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-linkedin" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <picture class="picture">
-                <source srcset="./images/Desktop/Team/olga.webp 1x, ./images/Desktop/Team/olga@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                <source srcset="./images/Desktop/Team/olga.jpeg 1x, ./images/Desktop/Team/olga@2x.jpeg 2x" media="(min-width: 1200px)">
-                <source srcset="./images/Tablet/Team/olga.webp 1x, ./images/Tablet/Team/olga@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                <source srcset="./images/Tablet/Team/olga.jpeg 1x, ./images/Tablet/Team/olga@2x.jpeg 2x"media="(min-width: 768px)">
-                <source srcset="./images/Mobile/Team/olga.webp 1x, ./images/Mobile/Team/olga@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
-                <source srcset="./images/Mobile/Team/olga.jpeg 1x, ./images/Mobile/Team/olga@2x.jpeg 2x" media="(min-width: 480px)">
-              <img
-                src="./images/Desktop/Team/olga.jpeg"
-                alt="Ольга Репина"
-              />
-            </picture>
-              <div class="team__card">
-                <h3 class="team__title">Ольга Репина</h3>
-                <p lang="en" class="team__desc">Frontend Developer</p>
-                <div class="social">
-                  <ul class="social__list list">
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-instagram" width="20" height="20">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-twitter" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-facebook" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-linkedin" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <picture class="picture">
-                <source srcset="./images/Desktop/Team/nicolai.webp 1x, ./images/Desktop/Team/nicolai@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                <source srcset="./images/Desktop/Team/nicolai.jpeg 1x, ./images/Desktop/Team/nicolai@2x.jpeg 2x" media="(min-width: 1200px)">
-                <source srcset="./images/Tablet/Team/nicolai.webp 1x, ./images/Tablet/Team/nicolai@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                <source srcset="./images/Tablet/Team/nicolai.jpeg 1x, ./images/Tablet/Team/nicolai@2x.jpeg 2x"media="(min-width: 768px)">
-                <source srcset="./images/Mobile/Team/nicolai.webp 1x, ./images/Mobile/Team/nicolai@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
-                <source srcset="./images/Mobile/Team/nicolai.jpeg 1x, ./images/Mobile/Team/nicolai@2x.jpeg 2x" media="(min-width: 480px)">
-              <img
-                src="./images/Desktop/Team/nicolai.jpeg"
-                alt="Николай Тарасов"
-              />
-              </picture>
-              <div class="team__card">
-                <h3 class="team__title">Николай Тарасов</h3>
-                <p lang="en" class="team__desc">Marketing</p>
-                <div class="social">
-                  <ul class="social__list list">
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-instagram" width="20" height="20">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-twitter" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-facebook" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-linkedin" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <picture class="picture">
-                <source srcset="./images/Desktop/Team/michael.webp 1x, ./images/Desktop/Team/michael@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                <source srcset="./images/Desktop/Team/michael.jpeg 1x, ./images/Desktop/Team/michael@2x.jpeg 2x" media="(min-width: 1200px)">
-                <source srcset="./images/Tablet/Team/michael.webp 1x, ./images/Tablet/Team/michael@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                <source srcset="./images/Tablet/Team/michael.jpeg 1x, ./images/Tablet/Team/michael@2x.jpeg 2x"media="(min-width: 768px)">
-                <source srcset="./images/Mobile/Team/michael.webp 1x, ./images/Mobile/Team/michael@2x.webp 2x" media="(min-width: 480px)" type="image/webp">
-                <source srcset="./images/Mobile/Team/michael.jpeg 1x, ./images/Mobile/Team/michael@2x.jpeg 2x" media="(min-width: 480px)">
-              <img
-                src="./images/Desktop/Team/michael.jpeg"
-                alt="Михаил Ермаков"
-              />
-            </picture>
-              <div class="team__card">
-                <h3 class="team__title">Михаил Ермаков</h3>
-                <p lang="en" class="team__desc">UI Designer</p>
-                <div class="social">
-                  <ul class="social__list list">
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-instagram" width="20" height="20">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-twitter" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-facebook" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__item">
-                      <a href="" class="social__link link">
-                        <svg class="img-linkedin" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+      /
 
       <!-- Client -->
-      <section class="client">
-        <div class="container">
-          <h2 class="title">Постоянные клиенты</h2>
-          <ul class="list client__list">
-            <li class="client__item">
-              <a href="" class="client__logo link">
-                <svg class="client__img" width="44.27" height="49.23">
-                  <use href="./images/icons.svg#icon-logo-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a href="" class="client__logo link">
-                <svg class="client__img" width="40" height="52">
-                  <use href="./images/icons.svg#icon-logo-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a href="" class="client__logo link">
-                <svg class="client__img" width="41" height="42.6">
-                  <use href="./images/icons.svg#icon-logo-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a href="" class="client__logo link">
-                <svg class="client__img" width="79.66" height="42.02">
-                  <use href="./images/icons.svg#icon-logo-4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a href="" class="client__logo link">
-                <svg class="client__img" width="59" height="47">
-                  <use href="./images/icons.svg#icon-logo-5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a href="" class="client__logo link">
-                <svg class="client__img" width="88.48" height="45.44">
-                  <use href="./images/icons.svg#icon-logo-6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      /
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__contact">
           <a class="logo link logo__link" href="./index.html"
@@ -601,7 +379,7 @@
           <button type="submit" class="modal__btn">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
