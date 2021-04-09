@@ -1,0 +1,40 @@
+.client{
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+    
+  &__item {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms var(--cubic);
+      
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  
+    .client__list & + & {
+      margin-left: 30px;
+    }
+  }
+    
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+  }
+   
+  &__img {
+    fill: #afb1b8;
+    transition: fill 250ms var(--cubic);
+  
+    .client__logo:hover &,
+    .client__logo:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}

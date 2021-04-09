@@ -1,0 +1,47 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+    .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .container{
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    width: 1200px;
+  }
+}
+
+// .container {
+
+  
+//   .hero & {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     width: 726px;
+//     text-align: center;
+//   }
+  
+//   .footer & {
+//     display: flex;
+//     align-items: baseline;
+//   }
+// }
+  

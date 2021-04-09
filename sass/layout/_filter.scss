@@ -1,0 +1,40 @@
+.filter{
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+    
+  &__item {
+    display: block;
+  
+    .filter__list & + & {
+      margin-left: 8px;
+      }
+    }
+  
+  &__btn {
+    padding: 6px;
+    border-width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--secondary-font-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic),
+        color 250ms var(--cubic);
+        
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--white-text-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
+    }
+}
