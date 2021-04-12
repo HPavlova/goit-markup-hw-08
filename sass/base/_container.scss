@@ -2,11 +2,16 @@
   padding-left: 15px;
   padding-right: 15px;
 
-    .header & {
+  .header & {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
+    border-bottom: 1px solid #ECECEC;
+  }
+
+  .hero & {
+    height: 400px;
   }
 }
 
@@ -17,9 +22,17 @@
   }
 }
 
-@media screen and (min-width: 768px){
-  .container{
+@media screen and (min-width: 768px) {
+  .container {
     width: 768px;
+  
+    .header & {
+      height: 80px;
+    }
+
+    .hero & {
+      height: 600px;
+    }
   }
 }
 
