@@ -1,17 +1,17 @@
 .logo {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
   
   &__theme-light {
-    color: var(--black-text-color);
+    color: $black-text-color;
   }
 
   &__theme-dark {
-    color: var(--white-text-color);
+    color: $white-text-color;
   }
 }
 

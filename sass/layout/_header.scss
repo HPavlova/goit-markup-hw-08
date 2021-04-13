@@ -17,7 +17,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
   }
 
   .img-burger{
@@ -26,7 +26,7 @@
 
     .burger__btn:hover &,
     .burger__btn:focus & {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }
@@ -72,13 +72,13 @@
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
-      color: var(--primary-text-color);
+      color: $primary-text-color;
       cursor: pointer;
-      transition: color 250ms var(--cubic);
+      transition: color 250ms $cubic;
 
       &:hover,
       &:focus {
-        color: var(--accent-color);
+        color: $accent-color;
       }
     }
   }
@@ -89,13 +89,13 @@
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.02em;
-      color: var(--secondary-text-color);
+      color: $secondary-text-color;
       cursor: pointer;
     }
   }
 
   .img-email, .img-tel {
-    fill: var(--secondary-text-color);
+    fill: $secondary-text-color;
   }
 
   .current {
@@ -107,13 +107,13 @@
       display: block;
       width: 100%;
       height: 4px;
-      background-color: var(--accent-color);
+      background-color: $accent-color;
       border-radius: 2px;
       margin-top: 28px;
     }
     
     .list & {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
@@ -137,11 +137,11 @@
   .contact__link {
     font-size: 14px;
     line-height: 1.14;
-    transition: color 250ms var(--cubic);
+    transition: color 250ms $cubic;
       
       &:hover,
       &:focus {
-        color: var(--accent-color);
+        color: $accent-color;
     }
   }
 
@@ -150,11 +150,11 @@
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
   
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 
@@ -163,11 +163,11 @@
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
 
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }

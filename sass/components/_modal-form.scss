@@ -11,7 +11,7 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   margin-bottom: 12px;
   }
 
@@ -25,7 +25,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
   
   &__input {
@@ -37,10 +37,10 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
-    transition: border-color 250ms var(--cubic);
+    transition: border-color 250ms $cubic;
     
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
     }
   }
 
@@ -49,11 +49,11 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
     
     .modal__input:focus + & {
       outline: none;
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 
@@ -66,10 +66,10 @@
     padding: 12px 16px;
     resize: none;
     margin-bottom: 20px;
-    transition: border-color 250ms var(--cubic);
+    transition: border-color 250ms $cubic;
 
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
     }
     
     &::placeholder {
@@ -87,7 +87,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     margin-bottom: 30px;
     
     &::before {
@@ -95,10 +95,10 @@
       content: "";
       width: 16px;
       height: 15px;
-      border: 1px solid var(--primary-text-color);
+      border: 1px solid $primary-text-color;
       margin-right: 8px;
       cursor: pointer;
-      transition: box-shadow 250ms var(--cubic);
+      transition: box-shadow 250ms $cubic;
       
       .modal__term-input:checked + & {
         background-image: url("../images/modalcheck.svg");
@@ -106,14 +106,14 @@
       }
       
       .modal__term-input:focus + & {
-        box-shadow: 0 0 0 2px var(--accent-color);
+        box-shadow: 0 0 0 2px $accent-color;
       }
     } 
   }
 
   &__term-link {
   outline: none;
-  color: var(--accent-color);
+  color: $accent-color;
   }
   
 }

@@ -5,8 +5,8 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
+  background-color: $accent-color;
+  color: $white-text-color;
 }
 
 .modal__btn {
@@ -17,18 +17,18 @@
     justify-content: center;
     width: 200px;
     height: 50px;
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
+    background-color: $accent-color;
+    color: $white-text-color;
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    transition: border-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+    transition: border-color 250ms $cubic, box-shadow 250ms $cubic;
     
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
   }

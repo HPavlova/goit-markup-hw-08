@@ -24,52 +24,52 @@
     border-radius: 50%;
     fill: #afb1b8;
     background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms var(--cubic);
+    transition: background-color 250ms $cubic;
       
     &:hover,
     &:focus {
-      background-color: var(--accent-color);
+      background-color: $accent-color;
       }
 
     .footer__social & {
-      fill: var(--white-text-color);
+      fill: $white-text-color;
     }
   }
 
 }
 
 .img-instagram {
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms $cubic;
   
   .social__link:hover &,
   .social__link:focus & {
-  fill: var(--white-text-color);
+  fill: $white-text-color;
   }
 }
 
 .img-twitter{
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms $cubic;
 
   .social__link:hover &,
   .social__link:focus & {
-    fill: var(--white-text-color);
+    fill: $white-text-color;
   }
 }
 
 .img-facebook{
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms $cubic;
 
   .social__link:hover &,
   .social__link:focus & {
-  fill: var(--white-text-color);
+  fill: $white-text-color;
   }
 }
 
 .img-linkedin {
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms $cubic;
   
   .social__link:hover &,
   .social__link:focus & {
-    fill: var(--white-text-color);
+    fill: $white-text-color;
   }
 }

@@ -1,6 +1,6 @@
 .team {
-  background-color: var(--secondary-font-color);
-  padding-bottom: var(--section-pb);
+  background-color: $secondary-font-color;
+  padding-bottom: $section-pb;
     
   &__list {
     display: flex;
@@ -28,7 +28,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
     
   &__desc {
@@ -36,7 +36,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
 }
   

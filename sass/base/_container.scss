@@ -8,10 +8,9 @@
     justify-content: space-between;
     height: 60px;
     border-bottom: 1px solid #ECECEC;
-  }
+    }
 
   .hero & {
-    height: 400px;
     text-align: center;
   }
 }
@@ -30,10 +29,6 @@
     .header & {
       height: 80px;
     }
-
-    .hero & {
-      height: 600px;
-    }
   }
 }
 
@@ -44,14 +39,6 @@
 }
 
 // .container {
-
-  
-//   .hero & {
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     width: 726px;
-//     text-align: center;
-//   }
   
 //   .footer & {
 //     display: flex;

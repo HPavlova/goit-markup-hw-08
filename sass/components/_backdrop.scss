@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: all 250ms var(--cubic);
+    transition: all 250ms $cubic;
   }
 
 .is-hidden {
