@@ -1,11 +1,19 @@
 .client{
+  padding-top: $section-mob-pt;
+  padding-bottom: $section-mob-pb;
+  margin: 0 auto;
 
-  &__list {
+  &__list{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-    
+
   &__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: $card-set-gap;
+    margin-left: $card-set-gap;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border 250ms $cubic;
@@ -14,17 +22,14 @@
     &:focus {
       border: 1px solid $accent-color;
     }
-  
-    .client__list & + & {
-      margin-left: 30px;
-    }
   }
     
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    margin: 0 auto;
+    width: 210px;
     height: 90px;
   }
    
@@ -35,6 +40,33 @@
     .client__logo:hover &,
     .client__logo:focus & {
       fill: $accent-color;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .client {
+  
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+
+    &__logo {
+      width: 224px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .client {
+    padding-top: $section-pt;
+    padding-bottom: $section-pb;
+
+    &__item{
+      flex-basis: calc(100% / 6 - 30px);
+      width: 170px;
+      text-align: center;
     }
   }
 }
