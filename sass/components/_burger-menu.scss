@@ -2,16 +2,16 @@
 
   .burger-menu {
     position: fixed;
+    z-index: 1;
     top: 0;
-    left: 0;
-    width: 100vw;
-    max-width: 480px;
-    height: 100vh;
+    left: 50%;
+    width: 480px;
+    height: 100%;
     padding: 48px 40px;
     background-color: #ffffff;
-    transform: translateY(-100%);
+    transform: translateY(-1000%) translateX(-50%);
     transition: transform 250ms $cubic, color 250ms $cubic;
-    }
+  }
   
   .burger-menu__btn {
     position: absolute;
@@ -97,9 +97,9 @@
     color: rgba(33, 33, 33, 0.2);
     padding-right: 10px;
     padding-left: 10px;
-    }
+  }
 
   .is-open {
-    transform: translateY(0);
-    }
+    transform: translateY(0) translateX(-50%);
   }
+}

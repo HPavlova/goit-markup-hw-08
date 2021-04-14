@@ -50,8 +50,16 @@
 
   .footer {
 
+    & .social {
+      margin-top: unset;
+    }
+
     &__social {
       margin-left: 165px;
+
+      & .join {
+        margin-top: unset;
+      }
     }
   }
 }
@@ -73,6 +81,12 @@
   .footer {
     &__social {
       margin-left: 70px;
+    }
+
+    &__form {
+      & .join {
+        margin-top: 16px;
+      }
     }
   }
 }

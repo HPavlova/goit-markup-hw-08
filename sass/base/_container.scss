@@ -34,7 +34,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: baseline;
     }
   }
 }
@@ -42,5 +41,9 @@
 @media screen and (min-width: 1200px){
   .container{
     width: 1200px;
+
+    .footer & {
+      align-items: baseline;
+    }
   }
 }
