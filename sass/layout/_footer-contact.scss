@@ -1,20 +1,20 @@
-.footer__social {
-  margin-left: 70px;
-}
-  
 .logo__link {
   display: flex;
+  margin: 0 auto;
   align-items: center;
-  width: 145px;
-  height: 31px;
   margin-bottom: 20px;
 }
 
 .address {
 
+  &__item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
   &__link {
-    display: flex;
-    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -22,21 +22,18 @@
   }
 
   &__link-map {
-    display: flex;
-    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $white-text-color;
   }
-
-  &__item {
-    margin-bottom: 9px;
-  }
 }
   
 .join {
   display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: $section-mob-pt;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -46,3 +43,36 @@
   color: $white-text-color;
   }
   
+@media screen and (min-width: 768px) {
+  .logo__link {
+    justify-content: center;
+  }
+
+  .footer {
+
+    &__social {
+      margin-left: 165px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .logo__link {
+    justify-content: left;
+  }
+
+  .address {
+
+    &__item {
+      text-align: left;
+      margin-bottom: 9px;
+    }
+  }
+
+  .footer {
+    &__social {
+      margin-left: 70px;
+    }
+  }
+}

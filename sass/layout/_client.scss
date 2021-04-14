@@ -27,9 +27,9 @@
   &__logo {
     display: flex;
     align-items: center;
+    width: 208px;
     justify-content: center;
     margin: 0 auto;
-    width: 210px;
     height: 90px;
   }
    
@@ -65,8 +65,10 @@
 
     &__item{
       flex-basis: calc(100% / 6 - 30px);
-      width: 170px;
-      text-align: center;
+    }
+
+    &__logo {
+      width: 168px;
     }
   }
 }
