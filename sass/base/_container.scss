@@ -29,6 +29,13 @@
     .header & {
       height: 80px;
     }
+
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
   }
 }
 
@@ -37,12 +44,3 @@
     width: 1200px;
   }
 }
-
-// .container {
-  
-//   .footer & {
-//     display: flex;
-//     align-items: baseline;
-//   }
-// }
-  
