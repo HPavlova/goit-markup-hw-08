@@ -2,11 +2,16 @@
   background-color: $secondary-font-color;
   padding-top: $section-mob-pt;
   padding-bottom: $section-mob-pb;
+  min-width: 480px;
   margin: 0 auto;
      
   &__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    &:not(:last-child) {
+      margin-bottom: $card-set-gap;
+    }
   }
     
   &__card {
@@ -50,11 +55,10 @@
       flex-basis: calc(100% / 2 - 30px);
       margin-top: $card-set-gap;
       margin-left: $card-set-gap;
-    }
-
-    &__item-img {
-      width: 354px;
-      height: 374px;
+      
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
 
     &__card {
@@ -66,16 +70,13 @@
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .team {
-    margin-top: $section-pt;
+    padding-top: $section-pt;
+    padding-bottom: $section-pb;
 
     &__item{
       flex-basis: calc(100% / 4 - 30px);
-    }
-
-    &__item-img {
-      width: 270px;
     }
 
     &__card {

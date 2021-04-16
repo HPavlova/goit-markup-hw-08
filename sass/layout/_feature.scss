@@ -1,5 +1,4 @@
 .feature {
-
   margin-bottom: $section-mob-pb;
 
   &__item {
@@ -7,7 +6,7 @@
     width: 100%;
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: $card-set-gap;
     }
   }
   

@@ -8,6 +8,7 @@
 
   .service {
     padding-top: 0;
+    padding-bottom: $section-pb;
     
     &__list {
       display: flex;

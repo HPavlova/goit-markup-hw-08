@@ -63,6 +63,10 @@
     padding-top: $section-pt;
     padding-bottom: $section-pb;
 
+    &__list {
+      flex-wrap: nowrap;
+    }
+
     &__item{
       flex-basis: calc(100% / 6 - 30px);
     }

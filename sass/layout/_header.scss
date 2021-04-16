@@ -15,7 +15,8 @@
   .burger__btn{
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     cursor: pointer;
     transition: fill 250ms $cubic;
   }
@@ -42,7 +43,7 @@
   }
 
   .menu__item{
-    display: block;
+    // display: block;
 
     .menu & + & {
       margin-left: 50px;
@@ -50,7 +51,7 @@
   }
   
   .contact__item {
-    display: block;
+    // display: block;
     
     &:first-child {
       margin-bottom: 10px;
@@ -84,6 +85,9 @@
   }
 
   .contact {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
     &__link {
       font-weight: 500;
       font-size: 12px;
@@ -121,7 +125,9 @@
 @media screen and (min-width: 1200px){
   .contact {
     display: flex;
-    align-items: center;}
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;}
     
   .contact__item {
 
