@@ -1,3 +1,8 @@
+.header {
+  margin: 0 auto;
+  border-bottom: 1px solid #ECECEC;
+}
+
 @media screen and (max-width: 767px) {
   .menu__item{
     display: none;
@@ -123,6 +128,7 @@
 }
   
 @media screen and (min-width: 1200px){
+
   .contact {
     display: flex;
     align-items: center;
